@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">StoryShare</string>
+    <string name="login">Masuk</string>
+    <string name="message_welcome_page">Mau berbagi cerita, belajar, dan berinteraksi dengan komunitas? Di StoryShare aja!</string>
+    <string name="title_welcome_page">Selamat datang di StoryShare</string>
+    <string name="title_signup_page">Silakan isi data dibawah ini!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="message_login_page">Masukkan dulu datamu ya</string>
+    <string name="title_login_page">Masuk ke StoryShare</string>
+    <string name="name">Nama</string>
+    <string name="message_main_page">Selamat berbagi cerita di StoryShare.</string>
+    <string name="greeting">Halo %1$s,</string>
+    <string name="logout">Keluar</string>
+    <string name="signup">Daftar</string>
+    <string name="forgot_password">Lupa Password?</string>
+    <string name="submit">Kirim</string>
+    <string name="loading">Sedang memuat...</string>
+    <string name="error_login_failed">Login gagal, silakan coba lagi.</string>
+    <string name="error_signup_failed">Pendaftaran gagal, silakan coba lagi.</string>
+    <string name="profile">Profil</string>
+    <string name="settings">Pengaturan</string>
+    <string name="share_story">Bagikan Cerita</string>
+    <string name="edit_profile">Edit Profil</string>
+    <string name="confirm_logout">Apakah Anda yakin ingin keluar?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="update">Perbarui</string>
+    <string name="cancel">Batal</string>
+   <string name="story_image_desc">gambar list</string>
+    <string name="error_message_text">Terjadi kesalahan</string>
+    <string name="retry_button_text">Reload</string>
+    <string name="btn_tambah_story">Tambah Story</string>
+    <string name="nama_story">Nama Story</string>
+    <string name="desc_story">Deskripsi singkat cerita di sini...</string>
+    <string name="nama_orang">Hai,Everyone</string>
+    <string name="language">language</string>
+    <string name="camera_error_message">Terjadi Kesalahan Camera</string>
+    <string name="email_not_valid">email tidak valid</string>
+    <string name="minimum_password">minimum password 8</string>
+    <string name="btn_foto">tombol foto</string>
+    <string name="image">image</string>
+    <string name="btn_swicth_kamera">btn_ubah_camera</string>
+    <string name="btn_camera">Camera</string>
+    <string name="btn_gallery">Gallery</string>
+    <string name="btn_upload">Upload</string>
+    <string name="textRegister">Tidak punya akun? Register </string>
+    <string name="belum_punya_akun">Sudah punya akun? Login</string>
+    <string name="capture_error_message">Tidak dapat mengambil gambar</string>
+   <string name="form_email">Masukkan Email</string>
+    <string name="form_name">Masukkan Username</string>
+    <string name="form_pswrd">Masukkan Password</string>
+
+
+</resources>
