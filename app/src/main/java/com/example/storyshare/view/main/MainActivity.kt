@@ -13,6 +13,7 @@ import com.example.storyshare.data.adapter.LoadingStateAdapter
 import com.example.storyshare.data.adapter.StoryPagingAdapter
 import com.example.storyshare.databinding.ActivityMainBinding
 import com.example.storyshare.utils.ViewModelFactory
+import com.example.storyshare.view.Maps.MapsActivity
 import com.example.storyshare.view.Story.CreateStoryActivity
 import com.example.storyshare.view.Story.StoryViewModel
 import com.example.storyshare.view.login.LoginActivity
@@ -54,6 +55,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, CreateStoryActivity::class.java))
         }
 
+        binding.ivmaps.setOnClickListener {
+            startActivity(Intent(this, MapsActivity::class.java))
+        }
+
         binding.ivLanguage.setOnClickListener {
             startActivity(Intent(Settings.ACTION_LOCALE_SETTINGS))
         }
@@ -92,4 +97,6 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, LoginActivity::class.java))
         finish()
     }
+
+
 }

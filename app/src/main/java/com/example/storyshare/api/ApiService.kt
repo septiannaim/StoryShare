@@ -26,6 +26,12 @@ interface ApiService {
         @Query("size") size: Int
     ): Response<StoriesResponse>
 
+    @GET("stories")
+    suspend fun getStoriesWithLocation(
+        token: String,
+        @Query("location") location: Int = 1,
+    ): Response<StoriesResponse>
+
     @Multipart
     @POST("stories")
     suspend fun uploadStory(

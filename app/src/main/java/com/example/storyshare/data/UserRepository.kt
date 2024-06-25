@@ -100,6 +100,24 @@ class UserRepository(private val userPreferences: UserPreferences, private val a
         }
     }
 
+    fun getAllStoryLocation(token: String): LiveData<Outcome<StoriesResponse>> = liveData {
+        emit(Outcome.InProgress)
+        try {
+            val response = apiService.getStoriesWithLocation(token, 1)
+            if (response.isSuccessful) {
+                response.body()?.let {
+                    emit(Outcome.Success(it)) // Emitting the actual StoriesResponse directly
+                } ?: emit(Outcome.Failure("Response body is null"))
+            } else {
+                emit(Outcome.Failure("Request failed with code ${response.code()}"))
+            }
+        } catch (e: Exception) {
+            Log.d("Error", e.message.toString())
+            emit(Outcome.Failure(e.message.toString()))
+        }
+    }
+
+
     companion object {
         @Volatile
         private var instance: UserRepository? = null

@@ -27,7 +27,7 @@
     <string name="no">Tidak</string>
     <string name="update">Perbarui</string>
     <string name="cancel">Batal</string>
-   <string name="story_image_desc">gambar list</string>
+    <string name="story_image_desc">gambar list</string>
     <string name="error_message_text">Terjadi kesalahan</string>
     <string name="retry_button_text">Reload</string>
     <string name="btn_tambah_story">Tambah Story</string>
@@ -47,9 +47,11 @@
     <string name="textRegister">Tidak punya akun? Register </string>
     <string name="belum_punya_akun">Sudah punya akun? Login</string>
     <string name="capture_error_message">Tidak dapat mengambil gambar</string>
-   <string name="form_email">Masukkan Email</string>
+    <string name="form_email">Masukkan Email</string>
     <string name="form_name">Masukkan Username</string>
     <string name="form_pswrd">Masukkan Password</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="API_KEY">AIzaSyDyTPX4NP9yUTCxNWlHlgKTVcLEwt5mWCw</string>
 
 
 </resources>

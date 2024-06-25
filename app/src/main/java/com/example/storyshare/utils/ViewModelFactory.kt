@@ -1,6 +1,7 @@
 package com.example.storyshare.utils
 
 import LoginViewModel
+import MapsViewModel
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -10,6 +11,7 @@ import com.example.storyshare.view.Story.CreateStoryViewModel
 import com.example.storyshare.view.Story.StoryViewModel
 import com.example.storyshare.view.signup.SignupViewModel
 import com.example.storyshare.view.welcome.WelcomeViewModel
+
 
 class ViewModelFactory(private val repository: UserRepository) : ViewModelProvider.NewInstanceFactory() {
 
@@ -30,6 +32,9 @@ class ViewModelFactory(private val repository: UserRepository) : ViewModelProvid
             }
             modelClass.isAssignableFrom(WelcomeViewModel::class.java) -> {
                 WelcomeViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(MapsViewModel::class.java) -> {
+                MapsViewModel(repository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }
