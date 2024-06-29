@@ -18,6 +18,8 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+
     }
 
     buildTypes {
@@ -53,10 +55,18 @@ dependencies {
     implementation("com.google.android.gms:play-services-basement:18.4.0")
     implementation("com.google.android.gms:play-services-maps:18.2.0")
 
+    testImplementation ("org.mockito:mockito-core:3.11.2")
+    testImplementation ("org.mockito:mockito-inline:3.11.2")
+
     // Testing dependencies
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    testImplementation ("androidx.arch.core:core-testing:2.1.0")
+    testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
+    testImplementation ("androidx.arch.core:core-testing:2.1.0")
+    implementation ("androidx.test.espresso:espresso-idling-resource:3.5.0")
 
     // Coroutine libraries for asynchronous programming
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")

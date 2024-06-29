@@ -28,7 +28,7 @@ interface ApiService {
 
     @GET("stories")
     suspend fun getStoriesWithLocation(
-        token: String,
+        @Header("Authorization") token: String,  // Added @Header annotation here
         @Query("location") location: Int = 1,
     ): Response<StoriesResponse>
 
